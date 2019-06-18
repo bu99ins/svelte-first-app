@@ -1,5 +1,8 @@
 <script>
   export let userName;
+  export let jobTitle;
+  export let userImage;
+  export let description;
 </script>
 
 <style>
@@ -9,12 +12,12 @@
 <div>
   <header>
     <div>
-      <img src="" alt="" />
+      <img src={userImage} alt="" />
     </div>
     <h1>{userName}</h1>
-    <h2>Job Title</h2>
+    <h2>{jobTitle}</h2>
   </header>
   <div>
-    <p>A short description</p>
+    <p>{description}</p>
   </div>
 </div>
