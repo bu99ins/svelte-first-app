@@ -6,12 +6,14 @@
 </script>
 
 <style>
-
+  .thumb-placeholder {
+    background: #ccc;
+  }
 </style>
 
 <div>
   <header>
-    <div>
+    <div class="thumb" class:thumb-placeholder={!userImage}>
       <img src={userImage} alt="" />
     </div>
     <h1>{userName}</h1>
