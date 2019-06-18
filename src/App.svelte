@@ -18,4 +18,4 @@
 <h1>Hello {name}, my age is {age}!</h1>
 <button on:click={incrementAge}>Change Age</button>
 
-<ContactCard />
+<ContactCard userName={name} />
