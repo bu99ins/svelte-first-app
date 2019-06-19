@@ -13,9 +13,7 @@
 </script>
 
 <style>
-  h1 {
-    color: purple;
-  }
+
 </style>
 
 <div class="form-control">
