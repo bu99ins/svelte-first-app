@@ -18,12 +18,26 @@
   }
 </style>
 
-<h1>Hello {name}!</h1>
-<!-- <input type="text" value={name} on:input={nameInput} /> -->
-<input type="text" bind:value={name} />
-<input type="text" bind:value={title} />
-<input type="text" bind:value={image} />
-<textarea rows="3" bind:value={description} />
+<div class="form-control">
+  <label for="userName">User Name</label>
+  <!-- <input type="text" value={name} on:input={nameInput} /> -->
+  <input type="text" bind:value={name} id="userName" />
+</div>
+
+<div class="form-control">
+  <label for="jobTitle">Job Title</label>
+  <input type="text" bind:value={title} id="jobTitle" />
+</div>
+
+<div class="form-control">
+  <label for="imageUrl">Image URL</label>
+  <input type="text" bind:value={image} id="imageURl" />
+</div>
+
+<div class="form-control">
+  <label for="description">Description</label>
+  <textarea rows="3" bind:value={description} id="description" />
+</div>
 
 <button on:click={addContact}>Add Contact Card</button>
 
